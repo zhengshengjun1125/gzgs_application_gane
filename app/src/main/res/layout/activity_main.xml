@@ -104,6 +104,6 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_below="@id/btn_agree"
-        android:text="已同意" />
+        android:text="已同意用户协议" />
 
 </RelativeLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text_test">测试,进行textview组件的测试测试,进行textview组件的测试测试,进行textview组件的测试测试,进行textview组件的测试</string>
 </resources>

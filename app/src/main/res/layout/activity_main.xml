@@ -1,19 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:src="@mipmap/ruike1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
+    todo
+        <TextVie/>代表写文本的
+        "wrap_content" 代表父控件的大小
+        wrap_content 代表能容下当前文字
+        android:gravity="center"  对齐方式
+        layout_width=""  组件宽度
+        layout_height=""  组件宽度
+        id=“@+id/name” 为你当前组件设置一个id
+        text="文本内容"
+        textColor="字体颜色"
+        textStyle="字体风格"   nomal,bold（加粗）,italic(斜体)
+        textSize="字体大小“   一般单位为sp
+        backgroud="控件背景颜色”
+        阴影效果
+        android:shadowRadius="3.0"     阴影的模糊程度  一般设置3.0即可
+        android:shadowColor="@color/red"   阴影颜色(此处使用color.xml中的引用)
+        android:shadowDx="10.0"         阴影在水平方向的偏移度
+        android:shadowDy="10.0"         阴影在竖直方向的偏移度
+        跑马灯效果
+        android:singleLine="单行显示"
+        android:focusable="是否可以获取焦点"
+        android:focusableInTouchMode="false"   控制视图模式下是否可以聚焦
+        android:ellipsize="end"    在哪里省略文本
+        android:marqueeRepeatLimit="字母动画重复的次数"
+    -->
+<!--    <com.example.myapplication.LableTextView-->
+<!--        android:id="@+id/text_test"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clickable="true"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--        android:shadowColor="@color/red"-->
+<!--        android:shadowDx="10.0"-->
+<!--        android:shadowDy="10.0"-->
+<!--        android:shadowRadius="3.0"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="@string/text_test"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="30sp" />-->
+
+
+    <EditText
+        android:drawableLeft="@drawable/user_avater"
+        android:hint="请输入用户名"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/user_pass"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:text="Login" />
+
+    <!--
+    todo
+    进行输入框的定位以及
+    -->
+
+</LinearLayout>

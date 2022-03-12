@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:backgroundTint="@color/blue"
         android:onClick="joinLoginPage"
         android:id="@+id/joinLogin"
         android:text="进入您的软件"

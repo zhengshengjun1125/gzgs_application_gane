@@ -23,20 +23,23 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     Button btn;
 
+    /*
+    todo    引导页的判断以及加载
+    * */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.btn_agree);
 
-        //暂时创建逻辑库
-        SharedPreferences sp = getSharedPreferences("config", MODE_PRIVATE);
-        if (sp.getBoolean("is_user_first_join", false)) {
-            startActivity(new Intent(MainActivity.this, WelcomeActivity.class)); //跳转到LoginActivity类中
-        }
+        //进入引导页
+        //并且判断之前是不是第一次登录
+        //startActivity(new Intent(MainActivity.this,WelcomeActivity.class));
 
 
     }
+
 
     /**
      * @param view
@@ -62,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.index_system);
         }
 
+    }
+
+    /**
+     * act的跳转，跳转到找回密码页面
+     * @param view
+     */
+    public void find_pass(View view) {
+        setContentView(R.layout.find_pass);
     }
 
 /*

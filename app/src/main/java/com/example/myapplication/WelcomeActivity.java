@@ -30,6 +30,10 @@ public class WelcomeActivity extends AppCompatActivity {
         viewPager.setAdapter(welcomeAdapter);
     }
 
+    /**
+     * 引导页的最后一页点击进入系统
+     * @param view
+     */
     public void joinLoginPage(View view) {
         setContentView(R.layout.activity_main);
 

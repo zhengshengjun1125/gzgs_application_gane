@@ -20,8 +20,9 @@
         </activity>
 
         <!--组件必须注册才能使用-->
-        <activity android:name=".WelcomeActivity"/>
-        <activity android:name=".IndexSystemActivity"/>
+        <activity android:name=".FindPassActivity"/>
+        <activity android:name=".GuidePageActivity"/>
+        <activity android:name=".TarbarActvity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--主页轮播图-->
+    <com.youth.banner.Banner
+        android:id="@+id/index_sideshow"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!--    主页导航图标-->
+    <GridLayout
+        android:id="@+id/label_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/index_sideshow"
+        android:columnCount="5"
+        android:padding="5dp"
+        android:rowCount="2">
+
+
+
+
+    </GridLayout>
+
+    <!--    消息中心-->
+    <TextView
+        android:id="@+id/index_message"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_image"
+        android:background="@color/white"
+        android:text="社区消息"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/index_message" />
+
+
+</RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,7 +23,7 @@ public class FindPassActivity extends AppCompatActivity {
      */
     public void back(View view) {
         //返回主页面
-        setContentView(R.layout.activity_main);
-        System.out.println("调用了back方法");
+//        setContentView(R.layout.activity_main);
+        startActivity(new Intent(FindPassActivity.this,MainActivity.class));
     }
 }

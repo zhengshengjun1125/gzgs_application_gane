@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--    因为是tarbar，我们需要将他固定在最下面且不动，使用相对布局-->
+
+    <!--    背景色-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/home_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <!--icon-->
+                <ImageView
+                    android:id="@+id/home_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginBottom="-15dp"
+                    android:src="@drawable/home_index" />
+                <!--文字-->
+                <TextView
+                    android:id="@+id/home_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="首页"
+                    android:textSize="23dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--新闻-->
+        <RelativeLayout
+            android:id="@+id/news_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <!--icon-->
+                <ImageView
+                    android:id="@+id/news_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginBottom="-15dp"
+                    android:src="@drawable/news_index" />
+                <!--文字-->
+                <TextView
+                    android:id="@+id/news_tv"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="新闻" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/mine_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <!--icon-->
+                <ImageView
+                    android:id="@+id/mine_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginBottom="-15dp"
+                    android:src="@drawable/mine_index" />
+                <!--文字-->
+                <TextView
+                    android:id="@+id/mine_tv"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="个人中心" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

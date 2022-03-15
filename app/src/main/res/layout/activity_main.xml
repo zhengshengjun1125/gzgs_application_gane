@@ -7,18 +7,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/topLable"
+    <!--轮播图 -->
+    <com.youth.banner.Banner
+        android:id="@+id/sideshow"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:src="@mipmap/ruike1" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--
     todo
         <TextVie/>代表写文本的
-        "wrap_content" 代表父控件的大小
+        "match_parent" 代表父控件的大小
         wrap_content 代表能容下当前文字
         android:gravity="center"  对齐方式
         layout_width=""  组件宽度
@@ -64,7 +65,7 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/topLable"
+        android:layout_below="@+id/sideshow"
         android:drawableLeft="@drawable/user_avater"
         android:drawablePadding="10dp"
         android:hint="请输入用户名"
@@ -80,8 +81,8 @@
         android:hint="请输入密码"
         android:inputType="textPassword" />
 
-    <Button
-        android:onClick="find_pass"
+
+    <TextView
         android:backgroundTint="@color/white"
         android:id="@+id/forget_pass"
         android:layout_width="match_parent"
@@ -92,7 +93,8 @@
         android:text="忘了密码?"
         android:textColor="@color/blue"
         android:textSize="16dp"
-        tools:ignore="OnClick" />
+        tools:ignore="OnClick"
+        android:background="@null" />
 
     <Button
         android:onClick="login"
@@ -103,11 +105,21 @@
         android:backgroundTint="@color/blue"
         android:text="Login" />
 
+    <!--SpannableString使用这个达成我们的目标-->
     <CheckBox
         android:id="@+id/read_agree"
-        android:layout_width="match_parent"
+        android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/btn_agree"
-        android:text="已同意用户协议" />
+         />
+
+    <TextView
+        android:id="@+id/agree_info"
+        android:layout_width="450dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_agree"
+        android:layout_toRightOf="@id/read_agree"
+        android:textSize="18sp" />
+
 
 </RelativeLayout>

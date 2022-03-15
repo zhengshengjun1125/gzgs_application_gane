@@ -2,22 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="@color/yellow"
     android:gravity="center"
-    android:orientation="vertical">
-    
+    android:orientation="vertical"
+    >
+
     <TextView
-        android:text="祝你使用愉快"
+        android:text="Hello"
         android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:backgroundTint="@color/blue"
-        android:onClick="joinLoginPage"
-        android:id="@+id/joinLogin"
-        android:text="进入您的软件"
-        android:layout_width="200dp"
+    <TextView
+        android:text="(往右划动)"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

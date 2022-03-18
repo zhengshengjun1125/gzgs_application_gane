@@ -181,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 注册账号
-     *
      * @param view
      */
     public void register(View view) {

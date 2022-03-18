@@ -12,19 +12,232 @@
         android:layout_height="300dp" />
 
     <!--    主页导航图标-->
-    <GridLayout
+    <RelativeLayout
         android:id="@+id/label_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@+id/index_sideshow"
-        android:columnCount="5"
-        android:padding="5dp"
-        android:rowCount="2">
+        android:padding="5dp">
+        <!--智慧生活-->
+        <RelativeLayout
+            android:id="@+id/index_life"
+            android:layout_width="80dp"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/home_life_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_life_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_life_index_image"
+                android:gravity="center"
+                android:text="智慧生活" />
+        </RelativeLayout>
+
+        <!--智慧交通-->
+        <RelativeLayout
+            android:id="@+id/index_tf"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/index_life">
+
+            <ImageView
+                android:id="@+id/home_tf_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_tf_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_tf_index_image"
+                android:gravity="center"
+                android:text="智慧交通" />
+        </RelativeLayout>
+
+        <!--智慧百科-->
+        <RelativeLayout
+            android:id="@+id/index_knowledge"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/index_tf">
+
+            <ImageView
+                android:id="@+id/home_knowledge_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_knowledge_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_knowledge_index_image"
+                android:gravity="center"
+                android:text="智慧百科" />
+        </RelativeLayout>
+
+        <!--智慧旅游-->
+        <RelativeLayout
+            android:id="@+id/index_tour"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/index_knowledge">
+
+            <ImageView
+                android:id="@+id/home_tour_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_tour_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_tour_index_image"
+                android:gravity="center"
+                android:text="智慧旅游" />
+        </RelativeLayout>
+
+        <!--智慧社区-->
+        <RelativeLayout
+            android:id="@+id/index_community"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/index_tour">
+
+            <ImageView
+                android:id="@+id/home_community_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_commity_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_community_index_image"
+                android:gravity="center"
+                android:text="智慧社区" />
+        </RelativeLayout>
+
+        <!--智慧城市-->
+        <RelativeLayout
+            android:id="@+id/index_city"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/index_life"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_city_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_city_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_city_index_image"
+                android:gravity="center"
+                android:text="智慧城市" />
+        </RelativeLayout>
+
+        <!--智慧政务-->
+        <RelativeLayout
+            android:id="@+id/index_government"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/index_tf"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/index_city">
+
+            <ImageView
+                android:id="@+id/home_government_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_chief_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_government_index_image"
+                android:gravity="center"
+                android:text="智慧政务" />
+        </RelativeLayout>
+
+        <!--智慧医疗-->
+        <RelativeLayout
+            android:id="@+id/index_nosick"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/index_knowledge"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/index_government">
+
+            <ImageView
+                android:id="@+id/home_nosick_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_medical_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_nosick_index_image"
+                android:gravity="center"
+                android:text="智慧医疗" />
+        </RelativeLayout>
+
+        <!--智慧医疗-->
+        <RelativeLayout
+            android:id="@+id/index_hygiene"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/index_tour"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/index_nosick">
+
+            <ImageView
+                android:id="@+id/home_hygiene_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/home_hygiene_index" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_hygiene_index_image"
+                android:gravity="center"
+                android:text="智慧环保" />
+        </RelativeLayout>
+
+        <!--智慧医疗-->
+        <RelativeLayout
+            android:id="@+id/more_serve"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/index_community"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/index_hygiene">
+
+            <ImageView
+                android:id="@+id/home_more_serve_index_image"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/icon_more" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/home_more_serve_index_image"
+                android:gravity="center"
+                android:text="更多服务" />
+        </RelativeLayout>
 
 
-
-
-    </GridLayout>
+    </RelativeLayout>
 
     <!--    消息中心-->
     <TextView

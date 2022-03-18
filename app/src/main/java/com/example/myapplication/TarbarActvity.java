@@ -131,7 +131,9 @@ public class TarbarActvity extends AppCompatActivity implements View.OnClickList
                 news_tv.setTextColor(blue);
                 if (newsFragment == null) {
                     newsFragment = new NewsFragment();
-                    transaction.add(R.id.content, newsFragment);
+                    //这里可能会出问题,算一个不能更改的bug,也许是系统cache的原因,只能使用替换不能add
+                    // maybe todo
+                    transaction.replace(R.id.content, newsFragment);
                 } else {
                     transaction.show(newsFragment);
                 }

@@ -14,7 +14,9 @@
         android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </com.youth.banner.Banner>
 
     <!--
     todo
@@ -121,5 +123,24 @@
         android:layout_toRightOf="@id/read_agree"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/noAccount"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/agree_info"
+        android:text="如果你没有账号，点击注册按钮"
+        android:textColor="@color/red"
+        android:gravity="left"/>
+
+    <Button
+        android:onClick="register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/red"
+        android:text="注册" />
 
 </RelativeLayout>

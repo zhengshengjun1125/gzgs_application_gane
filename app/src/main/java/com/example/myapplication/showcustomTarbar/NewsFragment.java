@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,6 +30,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
     private TextView news_education;//教育
     private TextView news_amusement;//娱乐
     private TextView news_pe;//体育
+    private ImageView search;//搜索图标
 
 
     private WealthFragment wealthFragment;
@@ -60,12 +63,14 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
         news_education = view.findViewById(R.id.news_education);
         news_amusement = view.findViewById(R.id.news_amusement);
         news_pe = view.findViewById(R.id.news_pe);
+        search = view.findViewById(R.id.news_search);
 
         news_amusement.setOnClickListener(this);
         news_military.setOnClickListener(this);
         news_education.setOnClickListener(this);
         news_wealth.setOnClickListener(this);
         news_pe.setOnClickListener(this);
+        search.setOnClickListener(this);
 
         clearChoice();
     }
@@ -88,6 +93,9 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.news_pe:
                 setItem(4);
+                break;
+            case R.id.news_search:
+                setItem(5);
                 break;
 
         }
@@ -155,6 +163,10 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
                 } else {
                     transaction.show(peFragment);
                 }
+                break;
+            case 5:
+                //点击搜索按钮
+                Toast.makeText(view.getContext(), "该功能暂时未开发", Toast.LENGTH_SHORT).show();
                 break;
         }
         transaction.commit();

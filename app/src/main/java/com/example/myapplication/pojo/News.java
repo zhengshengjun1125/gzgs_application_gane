@@ -1,15 +1,19 @@
 package com.example.myapplication.pojo;
 
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 /**
  * 新闻信息类
  */
 public class News {
     private String title;  //标题
+    private String message; //内容
+    private int image;      //图片
     private String date;   //时间
-    private String author_name;   //来源——作者名字
-    private String thumbnail_pic_s;   //头像
-    private String url;     //具体的内容
-
+    private String discussNumbers;//评论数
+    private int discuss_icon;//评论图标
     public String getTitle() {
         return title;
     }
@@ -18,35 +22,50 @@ public class News {
         this.title = title;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    //获取当前时间
     public String getDate() {
-        return date;
+        //时间格式化器
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.CHINA);
+        DateFormat timeFormat = DateFormat.getTimeInstance(DateFormat.MEDIUM, Locale.CHINA);
+        String data = dateFormat.format(new Date());
+        String time = timeFormat.format(new Date());
+        String now = data + time;
+        return now;
     }
 
     public void setDate(String date) {
         this.date = date;
     }
 
-    public String getAuthor_name() {
-        return author_name;
+    public String getDiscussNumbers() {
+        return discussNumbers;
     }
 
-    public void setAuthor_name(String author_name) {
-        this.author_name = author_name;
+    public void setDiscussNumbers(String discussNumbers) {
+        this.discussNumbers = discussNumbers;
     }
 
-    public String getThumbnail_pic_s() {
-        return thumbnail_pic_s;
+    public int getDiscuss_icon() {
+        return discuss_icon;
     }
 
-    public void setThumbnail_pic_s(String thumbnail_pic_s) {
-        this.thumbnail_pic_s = thumbnail_pic_s;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
+    public void setDiscuss_icon(int discuss_icon) {
+        this.discuss_icon = discuss_icon;
     }
 }

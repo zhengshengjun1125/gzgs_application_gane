@@ -28,6 +28,7 @@ import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
     private Button btn;//按钮
     private SharedPreferences jame;//一个存储数据的工具
     private List<Integer> images = new ArrayList<>();//存放轮播图图片
+    public static Map<String,String> userInfo = new HashMap();//存放用户信息
+
+    public static Map<String, String> userInfo() {
+        return userInfo;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,7 +158,9 @@ public class MainActivity extends AppCompatActivity {
                     if (!name.isEmpty()) {
                         //说明存在，在检验密码是否正确
                         if (passwordEdit.getText().toString().equals(password)) {
-                            //密码正确
+                            //密码正确,存放用户信息，并且进入主页面
+                            userInfo.put("username",name);
+                            userInfo.put("password",password);
                             startActivity(new Intent(this, TarbarActvity.class));
                         } else {
                             Toast.makeText(this, "密码错误", Toast.LENGTH_SHORT).show();

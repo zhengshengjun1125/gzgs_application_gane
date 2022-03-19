@@ -18,10 +18,12 @@
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/life.xml" value="0.2611111111111111" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/mine_index.xml" value="0.26564102564102565" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/mine_index_selector.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/news_discuss_icon.xml" value="0.25092592592592594" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/news_index.xml" value="0.2611111111111111" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/user_avater.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/drawable/user_pass.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/amusement_fragment.xml" value="0.176" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/amusement_ragment.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/education_fragment.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/find_pass.xml" value="0.2" />
@@ -42,11 +44,12 @@
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/index_two.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/military_fragment.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/mine_fragment.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/news_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/news_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/news_item.xml" value="0.2" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/pe_fragment.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/register_activity.xml" value="0.264" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/showtarbar_activity.xml" value="0.264" />
-        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/wealth_fragment.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/wealth_fragment.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/layout/welcome.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/Lenovo/Desktop/project/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13072916666666667" />

@@ -8,8 +8,7 @@
     <!--显示新闻文字以及最右边的搜索图标-->
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="@color/teal_200">
+        android:layout_height="50dp">
 
         <TextView
             android:id="@+id/news_text"
@@ -19,6 +18,7 @@
             android:textSize="40dp" />
 
         <ImageView
+            android:id="@+id/news_search"
             android:layout_width="115dp"
             android:layout_height="50dp"
             android:layout_marginLeft="206dp"
@@ -80,8 +80,13 @@
             android:text="体育"
             android:textSize="20dp" />
 
-
     </RelativeLayout>
+<!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000"
+        />
 
     <FrameLayout
         android:id="@+id/news_content"
